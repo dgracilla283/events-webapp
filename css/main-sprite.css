@@ -1,0 +1,18 @@
+#btn-home,
+#btn-back,
+.icon-calendar,
+.next-arrow-icon,
+.icon-profile,
+.icon-date,
+.icon-speaker,
+.icon-users,
+.icon-globe,
+.forward-button,
+.header-home-content,
+.header-inner-content,
+#schedule-list-header .ui-icon-minus,
+#schedule-list-header .ui-icon-plus,
+.left-schedule-head
+{
+	background: url(/img/image_sprite.png) no-repeat;
+}

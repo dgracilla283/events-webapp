@@ -1,0 +1,14 @@
+Hi <?php echo $_['owner']['first_name']?>,<br /><br />
+
+<?php echo $_['registrant']['first_name'] . ' ' . $_['registrant']['last_name']?> asked to join <?php echo $_['event']['title']?>.<br /><br />
+<?php 
+	$followLink = $_['app']['url'].'?eid='.$_['event']['eventID'];
+?>
+To manage the request, please login to  
+<a href="<?php echo $followLink;?>">
+<?php echo $_['app']['name'] ?>
+</a>.
+<br/><br/>
+Thanks,<br/>
+RCG Events Planner<br/>
+<a href="mailto:support@rcgevents.com">support@rcgevents.com</a>

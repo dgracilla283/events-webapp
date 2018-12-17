@@ -1,0 +1,22 @@
+Hi <?php echo $_['user']['first_name'] . ' ' . $_['user']['last_name'] ?>,
+<br/><br/>
+You are invited to be the speaker of the Event.
+<br/><br/>
+<b>What:</b> <?php echo $_['event']['title'] ?>
+<br/>
+<b>When:</b> <?php echo $_['event']['start_date_time'] ?> until <?php echo  $_['event']['end_date_time'] ?>
+<br/>
+<b>Where:</b> <?php echo $_['event']['location'] ?>
+<br/><br/>
+<?php
+$itinerary_params = ''; 
+if (!empty($_['itinerary_id'])){
+	$itinerary_params = '&iid=' . $_['itinerary_id'];
+}
+?>
+For more details on this event, please login to your RCG Event Planner account <a href="<?php echo $_['activationKeyData']['url']?>webapp/speaker_confirmation?id=<?php echo $_['event_id']?>&rid=<?php echo $_['reference_id']?>&rtype=<?php echo $_['reference_type']?>&uid=<?php echo $_['user']['userID']?>">
+<?php echo $_['activationKeyData']['url']?>webapp/speaker_confirmation?id=<?php echo $_['event_id']?>&rid=<?php echo $_['reference_id']?>&rtype=<?php echo $_['reference_type']?>&uid=<?php echo $_['user']['userID']?>
+</a>.<br /><br />
+Thanks,<br/>
+RCG Events Planner<br/>
+<a href="mailto:support@rcgevents.com">support@rcgevents.com</a>

@@ -1,0 +1,13 @@
+Hi <?php echo $_['speakerName']; ?>,<br /><br />
+You are invited to be the speaker of the <?php echo $_['eventTitle']; ?> event.<br /><br />
+
+<b>Activity</b><br />
+<b>What:</b> <?php echo $_['activityTitle']; ?><br />
+<b>When:</b> <?php echo $_['activityStart']; ?> until <?php echo $_['activityEnd']; ?><br />
+<b>Where:</b> <?php echo $_['activityLocation']; ?>
+<br /><br />
+For more details on this event, please login to your RCG Event Planner account <a href="<?php echo $_['baseUrl']; ?>webapp/speaker_confirmation?id=<?php echo $_['eventId']; ?>&rtype=<?php echo $_['referenceType']; ?>&uid=<?php echo $_['userId']; ?>&iid=<?php echo $_['itineraryId']; ?>"><?php echo $_['baseUrl']; ?>webapp/speaker_confirmation?id=<?php echo $_['eventId']; ?>&rtype=<?php echo $_['referenceType']; ?>&uid=<?php echo $_['userId']; ?>&iid=<?php echo $_['itineraryId']; ?></a>.
+<br /><br />
+Thanks,<br/>
+RCG Events Planner<br/>
+<a href="mailto:support@rcgevents.com">support@rcgevents.com</a>

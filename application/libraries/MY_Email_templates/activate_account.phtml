@@ -1,0 +1,15 @@
+Hi <?php echo $_['user']['first_name']?>,<br /><br />
+
+Weclome to RCG Event Planner and thanks for signing up!<br /><br />
+
+Your username is: <?php echo $_['user']['email']?><br /><br />
+
+Just click this link to activate your account:<br />
+<a href="<?php echo $_['activationKeyData']['url']?>webapp/activate_account?user_id=<?php echo $_['user']['userID']?>&key=<?php echo $_['activationKeyData']['key']?>">
+<?php echo $_['activationKeyData']['url']?>webapp/activate_account?user_id=<?php echo $_['user']['userID']?>&key=<?php echo $_['activationKeyData']['key']?>
+</a>
+
+<br/><br/>
+Thanks,<br/>
+RCG Events Planner<br/>
+<a href="mailto:support@rcgevents.com">support@rcgevents.com</a>

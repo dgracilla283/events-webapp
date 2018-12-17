@@ -1,0 +1,18 @@
+Hi <?php echo $_['user']['first_name'] . ' ' . $_['user']['last_name'] ?>,
+<br/><br/>
+You have been registered to the following RCG event:
+<br/><br/>
+<b>What:</b> <?php echo $_['event']['title'] ?>
+<br/>
+<b>When:</b> <?php echo $_['event']['start_date_time'] ?> until <?php echo  $_['event']['end_date_time'] ?>
+<br/>
+<b>Where:</b> <?php echo $_['event']['location'] ?>
+<br/><br/>
+For more details on this event, please login to   
+<a href="<?php echo base_url();?>">
+RCG Events Planner
+</a>.
+<br/><br/>
+Thanks,<br/>
+RCG Events Planner<br/>
+<a href="mailto:support@rcgevents.com">support@rcgevents.com</a>
